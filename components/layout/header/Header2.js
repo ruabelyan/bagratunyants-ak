@@ -30,7 +30,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                             {/* <li><Link href="/"><i className="icon-5"></i></Link></li>
                             <li><Link href="/"><i className="icon-6"></i></Link></li> */}
                             <li><Link href="/"><i className="icon-7"></i></Link></li>
-                         {window.screen.width > 781 &&   <div>
+                         {window?.screen?.width > 781 &&   <div>
                            <li>
                                     <img style={{cursor:'pointer'}} onClick={() => changeLang("arm")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Armenia.png" alt=""/>
                                 </li>

@@ -2,27 +2,9 @@
 import Layout from "@/components/layout/Layout"
 import TestimonialSlider3 from '@/components/slider/TestmonialSlider3'
 import Link from "next/link"
-import { useState } from 'react'
 
 export default function Home() {
-  const [isOpen, setOpen] = useState(false)
-  const [isActive, setIsActive] = useState({
-    status: false,
-    key: 1,
-  })
 
-  const handleToggle = (key) => {
-    if (isActive.key === key) {
-      setIsActive({
-        status: false,
-      })
-    } else {
-      setIsActive({
-        status: true,
-        key,
-      })
-    }
-  }
   return (
     <>
       <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Մեր մասին">

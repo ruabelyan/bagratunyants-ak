@@ -4,7 +4,6 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
-import { useTranslation } from 'react-i18next';
 export default function Home() {
     const [isOpen, setOpen] = useState(false)
     const [isActive, setIsActive] = useState({

@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import { useTranslation } from 'react-i18next';
 
 const ProgressBar = ({ label, percent }) => (
     <div className="progress-box">
@@ -126,7 +125,6 @@ export default function Home() {
                             </div>
                         </div>
                         </section>
-                        {/* subscibe end */}
             </Layout>
         </>
     )

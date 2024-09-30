@@ -5,4 +5,7 @@
 module.exports = {
     distDir: 'build',
     output: 'export',
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
 }

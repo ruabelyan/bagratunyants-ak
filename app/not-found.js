@@ -36,7 +36,7 @@ export default function Error404() {
                                     <div className="form-group">
                                         <div className="check-box">
                                             <input className="check" type="checkbox" id="checkbox1" />
-                                            <label htmlFor="checkbox1">I agree to the <Link href="/">Privacy Policy.</Link></label>
+                                        <label htmlFor="checkbox1">I agree to the <Link href="/">Privacy Policy.</Link></label>
                                         </div>
                                     </div>
                                 </form>
