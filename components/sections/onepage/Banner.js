@@ -24,7 +24,7 @@ export default function Banner() {
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 image-column">
             <div className="image-box">
-              <figure className="image float-bob-y"><img src="assets/images/banner/banner-img-1.png" alt="" /></figure>
+              <figure className="image float-bob-y"><img src="assets/images/banner/banner-img-1.jpeg" alt="" /></figure>
             </div>
           </div>
         </div>
@@ -32,4 +32,3 @@ export default function Banner() {
     </section>
   );
 };
-

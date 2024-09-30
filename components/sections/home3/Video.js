@@ -1,6 +1,8 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 import ModalVideo from 'react-modal-video'
 export default function Video() {
@@ -20,7 +22,7 @@ export default function Video() {
                     <span className="border-animation border-3"></span>
                     </a>
                     </div>
-                    <h2>Online Consultations With <br />Qualified Doctors</h2>
+                    <h2>Online Consultations With <br />{t("qualifiedDoctor_key")}</h2>
                     <div className="btn-box">
                         <Link href="/" className="theme-btn btn-one"><span>Make an Appointment</span></Link>
                     </div>

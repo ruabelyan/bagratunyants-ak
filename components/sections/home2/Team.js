@@ -35,7 +35,7 @@ export default function Team() {
         </div>
     <div className="row clearfix">
       <TeamMember
-        name="Black Marvin"
+        name="Սրբուհի Միքաելյան"
         designation="Medical Assistant"
         imageSrc="assets/images/team/team-5.jpg"
         socialLinks={[
@@ -46,7 +46,7 @@ export default function Team() {
         ]}
       />
       <TeamMember
-        name="Eleanor Pena"
+        name="Գայանե Պետրոսյան"
         designation="Doctor"
         imageSrc="assets/images/team/team-6.jpg"
         socialLinks={[
@@ -57,7 +57,7 @@ export default function Team() {
         ]}
       />
       <TeamMember
-        name="Arlene Maccy"
+        name="Անահիտ Գրիգորյան"
         designation="Nursing Assistant"
         imageSrc="assets/images/team/team-7.jpg"
         socialLinks={[
@@ -68,7 +68,7 @@ export default function Team() {
         ]}
       />
       <TeamMember
-        name="Jenny Wilson"
+        name="Աննա Դանիելյան"
         designation="Senior Doctor"
         imageSrc="assets/images/team/team-8.jpg"
         socialLinks={[

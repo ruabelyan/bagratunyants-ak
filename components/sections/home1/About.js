@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 export default function about() {
+  const { t ,i18n} = useTranslation();
+
   return (
     <section className="about-section pt_120 pb_120 bg-color-1">
       <div className="pattern-layer">
@@ -31,22 +35,22 @@ export default function about() {
             <div className="content_block_one">
               <div className="content-box ml_30">
                 <div className="sec-title mb_15">
-                  <span className="sub-title">About Us</span>
-                  <h2>Medical services & diagnostics</h2>
+                  <span className="sub-title">{t("aboutUs_key")}</span>
+                  <h2>{t("serviceDiagnostics_key")}</h2>
                 </div>
                 <div className="text-box mb_40">
-                  <h6>Committed To Delivering High Quality Medical & Diagnostics Services!</h6>
+                  <h6>{t("commitedTo_key")}</h6>
                   <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                   <ul className="list-style-one clearfix">
-                    <li>Ambulance Services</li>
-                    <li>Oxizen on Wheel</li>
-                    <li>Pharmacy on Clinic</li>
-                    <li>On duty Doctors</li>
-                    <li>24/7 Medical Emergency</li>
+                    <li>{t("ambulanceServices_key")}</li>
+                    <li>{t("oxizen_key")}</li>
+                    <li>{t("pharmacyClinic_key")}</li>
+                    <li>{t("dutyDoctors_key")}</li>
+                    <li>{t("medicalEmergency_key")}</li>
                   </ul>
                 </div>
                 <div className="btn-box">
-                  <Link href="/#" className="theme-btn btn-one"><span>Discover More</span></Link>
+                  <Link href="/#" className="theme-btn btn-one"><span>{t("discoverMore_key")}</span></Link>
                 </div>
               </div>
             </div>

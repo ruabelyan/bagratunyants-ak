@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
+import { useTranslation } from 'react-i18next';
 export default function Home() {
     const [isOpen, setOpen] = useState(false)
     const [isActive, setIsActive] = useState({
@@ -52,9 +53,9 @@ export default function Home() {
                       <div className="select-box">
                         <select className="selectmenu">
                           <option>Haddam Banksy</option>
-                          <option>Black Marvin</option>
-                          <option>Eleanor Pena</option>
-                          <option>Arlene Maccy</option>
+                          <option>Սրբուհի Միքաելյան</option>
+                          <option>Գայանե Պետրոսյան</option>
+                          <option>Անահիտ Գրիգորյան</option>
                         </select>
                       </div>
                     </div>
@@ -100,7 +101,7 @@ export default function Home() {
                         <div className="video-btn">
                         <a onClick={() => setOpen(true)}><i className="fas fa-play"></i></a>
                         </div>
-                        <h2>Online Consultations With <br />Qualified Doctors</h2>
+                        <h2>Online Consultations With <br />{t("qualifiedDoctor_key")}</h2>
                         <div className="btn-box">
                             <Link href="/" className="theme-btn btn-one"><span>Make an Appointment</span></Link>
                         </div>
@@ -136,7 +137,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Black Marvin</Link></h3>
+                                    <h3><Link href="team-details">Սրբուհի Միքաելյան</Link></h3>
                                     <span className="designation">Medical Assistant</span>
                                 </div>
                             </div>
@@ -155,7 +156,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Eleanor Pena</Link></h3>
+                                    <h3><Link href="team-details">Գայանե Պետրոսյան</Link></h3>
                                     <span className="designation">Doctor</span>
                                 </div>
                             </div>
@@ -174,7 +175,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Arlene Maccy</Link></h3>
+                                    <h3><Link href="team-details">Անահիտ Գրիգորյան</Link></h3>
                                     <span className="designation">Nursing Assistant</span>
                                 </div>
                             </div>
@@ -193,7 +194,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Jenny Wilson</Link></h3>
+                                    <h3><Link href="team-details">Աննա Դանիելյան</Link></h3>
                                     <span className="designation">Senior Doctor</span>
                                 </div>
                             </div>

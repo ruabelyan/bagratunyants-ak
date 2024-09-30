@@ -1,6 +1,8 @@
 import Link from "next/link"
+import { useTranslation } from "react-i18next"
 
 export default function Footer1() {
+  const {t} = useTranslation('');
   return (
     <>
       <footer className="main-footer" id="footer">
@@ -25,7 +27,7 @@ export default function Footer1() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+              {/* <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
                 <div className="footer-widget links-widget ml_110">
                   <div className="widget-title">
                     <h3>Quick Link</h3>
@@ -40,8 +42,8 @@ export default function Footer1() {
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+              </div> */}
+              {/* <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
                 <div className="footer-widget links-widget ml_55">
                   <div className="widget-title">
                     <h3>Useful Links</h3>
@@ -57,7 +59,7 @@ export default function Footer1() {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
                 <div className="footer-widget contact-widget">
                   <div className="widget-title">
@@ -65,9 +67,9 @@ export default function Footer1() {
                   </div>
                   <div className="widget-content">
                     <ul className="info-list">
-                      <li><img src="assets/images/icons/icon-1.png" alt="" />3891 Ranchview Dr. Richardson, California USA</li>
-                      <li><i className="icon-2"></i><Link href="tel:01989526503">poliklinika-13@mail.ru</Link></li>
-                      <li><i className="icon-26"></i><Link href="mailto:example@info.com">example@info.com</Link></li>
+                      <li><img src="assets/images/icons/icon-1.png" alt="" />{t('address_key')}</li>
+                      <li><i className="icon-2"></i><Link href="tel:+374-10-482161">+374-10-482161</Link></li>
+                      <li><i className="icon-26"></i><Link href="mailto:poliklinika-13@mail.ru">poliklinika-13@mail.ru</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -79,14 +81,14 @@ export default function Footer1() {
           <div className="auto-container">
             <div className="bottom-inner">
               <ul className="footer-nav clearfix">
-                <li><Link href="/">Privacy Policy</Link></li>
-                <li><Link href="/">Terms of Use</Link></li>
+                <li><Link href="/">{t('home_key')}</Link></li>
+                {/* <li><Link href="/">Terms of Use</Link></li>
                 <li><Link href="/">Sales and Refunds</Link></li>
-                <li><Link href="/">Legal</Link></li>
-                <li><Link href="/">Site Map</Link></li>
+                <li><Link href="/">Legal</Link></li> */}
+                <li><Link href="/">{t('aboutUs_key')}</Link></li>
               </ul>
               <div className="copyright">
-                <p>&copy; 2024 All Rights Reserved</p>
+                <p>&copy; 2024 {t('allRightsReserved_key')}</p>
               </div>
             </div>
           </div>

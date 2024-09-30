@@ -2,10 +2,10 @@ import React from 'react';
 import Link from "next/link"
 export default function Team() {
   const teamMembers = [
-    { name: 'Black Marvin', role: 'Medical Assistant', image: 'assets/images/team/team-1.jpg' },
-    { name: 'Eleanor Pena', role: 'Doctor', image: 'assets/images/team/team-2.jpg' },
-    { name: 'Arlene Maccy', role: 'Nursing Assistant', image: 'assets/images/team/team-3.jpg' },
-    { name: 'Jenny Wilson', role: 'Senior Doctor', image: 'assets/images/team/team-4.jpg' },
+    { name: 'Սրբուհի Միքաելյան', role: 'Medical Assistant', image: 'assets/images/team/team-1.jpg' },
+    { name: 'Գայանե Պետրոսյան', role: 'Doctor', image: 'assets/images/team/team-2.jpg' },
+    { name: 'Անահիտ Գրիգորյան', role: 'Nursing Assistant', image: 'assets/images/team/team-3.jpg' },
+    { name: 'Աննա Դանիելյան', role: 'Senior Doctor', image: 'assets/images/team/team-4.jpg' },
   ];
 
   return (

@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar }) {
   const [isActive, setIsActive] = useState({
@@ -24,6 +25,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
       });
     }
   };
+  const {t} = useTranslation();
 
   return (
     <>
@@ -33,7 +35,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
         <nav className="menu-box">
           <div className="nav-logo">
             <Link href="/">
-              <img src="/assets/images/logo-2.png" alt="" />
+              <img src="/assets/images/logo.png" alt="" />
             </Link>
           </div>
           <div className="menu-outer">
@@ -41,18 +43,17 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
               className="collapse navbar-collapse show clearfix"
               id="navbarSupportedContent">
               <ul className="navigation clearfix">
-                <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}>
-                  <Link href="/" >Home</Link>
-                  <ul style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                    <li><Link href="/"onClick={handleMobileMenu}>Home Page One</Link></li>
-                    <li><Link href="/index-2" onClick={handleMobileMenu}>Home Page Two</Link></li>
-                    <li><Link href="/index-3" onClick={handleMobileMenu}>Home Page Three</Link></li>
-                    <li><Link href="/onepage" onClick={handleMobileMenu}>One Page Home</Link></li>
-                  </ul>
+                {/* <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}>
+                  <Link href="/" >{t('home_key')}</Link>
+               
                   <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fa fa-angle-right" /></div>
-                </li>
-                <li><Link href="/about-us">About</Link></li>
-                <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}>
+                </li> */}
+                <li><Link href="/about-us">{t('home_key')}</Link></li>
+                <li><Link href="/about-us">{t('aboutUs_key')}</Link></li>
+                <li><Link href="/about-us">{t('services_key')}</Link></li>
+                <li><Link href="/about-us">{t('staff_key')}</Link></li>
+                <li><Link href="/about-us">{t('contact_key')}</Link></li>
+                {/* <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}>
                   <Link href="/#">Services</Link>
                   <ul style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                     <li><Link href="/service" onClick={handleMobileMenu}>Our Services</Link></li>
@@ -65,16 +66,16 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                   </ul>
                   <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></div>
                 </li>
-                
-                    <li className={isActive.key  == 3 ? "dropdown current" : "dropdown"}>
+                 */}
+                    {/* <li className={isActive.key  == 3 ? "dropdown current" : "dropdown"}>
                       <Link href="/#">Team</Link>
                       <ul style={{ display: `${isActive.key  == 3 ? "block" : "none"}` }}>
                         <li><Link href="/team" onClick={handleMobileMenu}>Our Team</Link></li>
                         <li><Link href="/team-details" onClick={handleMobileMenu}>Team Details</Link></li>
                       </ul>
                       <div className={isActive.key  == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="fa fa-angle-right" /></div>
-                    </li>
-                <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}>
+                    </li> */}
+                {/* <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}>
                   <Link href="/#">Pages</Link>
                   <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
                         <li className={isActive.subMenuKey == 5 ? "dropdown current" : "dropdown"}><Link href="/#">News</Link>
@@ -95,17 +96,17 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                         <li><Link href="/error-page" onClick={handleMobileMenu}>Page Not Found</Link></li>
                       </ul>
                       <div className={isActive.key  == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></div>
-                    </li>
-                <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
+                    </li> */}
+                {/* <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li> */}
               </ul>
             </div>
           </div>
           <div className="contact-info">
-          <h4>Contact Info</h4>
+          <h4>{t('contactUs_key')}</h4>
           <ul>
-            <li>Chicago 12, Melborne City, USA</li>
-            <li><Link href="tel:+8801682648101">+88 01682648101</Link></li>
-            <li><Link href="mailto:info@example.com">info@example.com</Link></li>
+            <li>{t("address_key")}</li>
+            <li><Link href="tel:+374-10-482161">+374-10-482161</Link></li>
+            <li><Link href="mailto:poliklinika-13@mail.ru">poliklinika-13@mail.ru</Link></li>
           </ul>
         </div>
           {/*Social Links*/}

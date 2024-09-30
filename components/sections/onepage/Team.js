@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Team() {
   const teamMembers = [
     {
-      name: 'Black Marvin',
+      name: 'Սրբուհի Միքաելյան',
       role: 'Medical Assistant',
       image: 'assets/images/team/team-1.jpg',
       socialLinks: [
@@ -14,7 +14,7 @@ export default function Team() {
       ],
     },
     {
-      name: 'Eleanor Pena',
+      name: 'Գայանե Պետրոսյան',
       role: 'Doctor',
       image: 'assets/images/team/team-2.jpg',
       socialLinks: [
@@ -25,7 +25,7 @@ export default function Team() {
       ],
     },
     {
-      name: 'Arlene Maccy',
+      name: 'Անահիտ Գրիգորյան',
       role: 'Nursing Assistant',
       image: 'assets/images/team/team-3.jpg',
       socialLinks: [
@@ -36,7 +36,7 @@ export default function Team() {
       ],
     },
     {
-      name: 'Jenny Wilson',
+      name: 'Աննա Դանիելյան',
       role: 'Senior Doctor',
       image: 'assets/images/team/team-4.jpg',
       socialLinks: [

@@ -12,7 +12,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <div className="top-inner">
                             <ul className="info-list clearfix">
                                 <li><i className="icon-1"></i>Երկ - Ուրբ 09:00-18:00</li>
-                                <li><i className="icon-2"></i>Email: <Link href="tel:01989526503">poliklinika-13@mail.ru</Link></li>
+                                <li><i className="icon-2"></i> <Link href="tel:01989526503">poliklinika-13@mail.ru</Link></li>
                                 <li><img src="assets/images/icons/icon-1.png" alt="" />  Երևան
                                     Շահամիրյանների փող., 32 շենք</li>
                             </ul>

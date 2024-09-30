@@ -30,7 +30,7 @@ export default function Team() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Black Marvin</Link></h3>
+                                    <h3><Link href="team-details">Սրբուհի Միքաելյան</Link></h3>
                                     <span className="designation">Medical Assistant</span>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ export default function Team() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Eleanor Pena</Link></h3>
+                                    <h3><Link href="team-details">Գայանե Պետրոսյան</Link></h3>
                                     <span className="designation">Doctor</span>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ export default function Team() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Arlene Maccy</Link></h3>
+                                    <h3><Link href="team-details">Անահիտ Գրիգորյան</Link></h3>
                                     <span className="designation">Nursing Assistant</span>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ export default function Team() {
                                     </ul>
                                 </div>
                                 <div className="lower-content">
-                                    <h3><Link href="team-details">Jenny Wilson</Link></h3>
+                                    <h3><Link href="team-details">Աննա Դանիելյան</Link></h3>
                                     <span className="designation">Senior Doctor</span>
                                 </div>
                             </div>

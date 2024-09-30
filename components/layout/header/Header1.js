@@ -2,9 +2,14 @@
 import Link from "next/link";
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
+import { useTranslation } from 'react-i18next';
+
 
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
+  const { t ,i18n} = useTranslation();
+  
   return (
+
     <>
       <header className={`main-header ${scroll ? "fixed-header" : ""}`}>
         {/* Header Top */}
@@ -13,10 +18,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
             <div className="top-inner">
               <ul className="info-list clearfix">
                 <li>
-                  <i className="icon-1"></i>Երկ - Ուրբ 09:00-18:00
+                  <i className="icon-1"></i>{t("monday_key")} - Ուրբ 09:00-18:00
                 </li>
                 <li>
-                  <i className="icon-2"></i>Email: <Link href="tel:01989526503">poliklinika-13@mail.ru</Link>
+                  <i className="icon-2"></i>{t("email_key")} <Link href="tel:01989526503">poliklinika-13@mail.ru</Link>
                 </li>
                 <li>
                   <img src="assets/images/icons/icon-1.png" alt="" />  Երևան

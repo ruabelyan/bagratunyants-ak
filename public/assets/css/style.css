@@ -2326,6 +2326,13 @@ button.ltr {
   background: #fff;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  /* Your styles here */
+  .header-style-two .header-lower .outer-container ,.header-style-two .header-top{
+    padding-left: 0;
+padding-right: 0;
+  }
+}
 .main-header .menu-right-content{
   position: relative;
   display: flex;

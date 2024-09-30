@@ -11,7 +11,7 @@ export default function Feature() {
           <div className="feature-block-one">
             <div className="inner-box">
               <div className="icon-box"><i className="icon-9"></i></div>
-              <h3><Link href="/">Qualified Doctor</Link></h3>
+              <h3><Link href="/">Qualified Doctorqq</Link></h3>
               <p>Lorem ipsum dolor sit amet ctetur adipiscing</p>
             </div>
           </div>

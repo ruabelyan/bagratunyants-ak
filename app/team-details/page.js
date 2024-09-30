@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useTranslation } from 'react-i18next';
+
 const ProgressBar = ({ label, percent }) => (
     <div className="progress-box">
       <p>{label}</p>
@@ -24,12 +26,12 @@ export default function Home() {
                         </div>
                         <div className="col-lg-7 col-md-12 col-sm-12 content-column">
                             <div className="content-box">
-                                <h2>Jenny Wilson</h2>
+                                <h2>Աննա Դանիելյան</h2>
                                 <span className="designation">Senior Doctor</span>
                                 <p>Eget lorem dolor sed viverra. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. consectetur adipiscing elit. Libero turpis blandit blandit mauris aliquam condimentum quam suspendisse Pellentesque habitant morbi tristique senectus et netus</p>
                                 <ul className="info-list mb_30 clearfix">
                                     <li><strong>Experience: </strong>20 Years</li>
-                                    <li><strong>Email: </strong><Link href="mailto:tanya.hill@example.com">tanya.hill@example.com</Link></li>
+                                    <li><strong>{t("email_key")} </strong><Link href="mailto:tanya.hill@example.com">tanya.hill@example.com</Link></li>
                                     <li><strong>Phone: </strong><Link href="tel:3035550105">(303) 555-0105</Link></li>
                                 </ul>
                                 <ul className="social-links clearfix">

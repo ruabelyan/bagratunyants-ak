@@ -18,22 +18,30 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
 
                     <div className="top-inner">
                         <ul className="info-list clearfix">
-                            <li><i className="icon-1"></i>Երկ - Ուրբ 09:00-18:00</li>
-                            <li><i className="icon-2"></i>Email: <Link href="tel:01989526503">poliklinika-13@mail.ru</Link></li>
+                            <li><i className="icon-1"></i>{t("monday_key")} - {t("friday_key")} 09:00-18:00</li>
+                            <li><i className="icon-2"></i>{t("email_key")} <Link href="tel:01989526503">poliklinika-13@mail.ru</Link></li>
                             <li><img src="assets/images/icons/icon-1.png" alt="" />  Երևան
                                 Շահամիրյանների փող., 32 շենք</li>
                                 
-                                <li>
-                                    <img onClick={() => changeLang("arm")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Armenia.png" alt=""/>
-                                <img onClick={() => changeLang("ru")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt=""/>
-                                <img  onClick={() => changeLang("en")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png" alt=""/>
-                                </li>
+                               
                         </ul>
                         <ul className="social-links clearfix">
                             <li><Link href="/"><i className="icon-4"></i></Link></li>
                             {/* <li><Link href="/"><i className="icon-5"></i></Link></li>
                             <li><Link href="/"><i className="icon-6"></i></Link></li> */}
                             <li><Link href="/"><i className="icon-7"></i></Link></li>
+                         {window.screen.width > 781 &&   <div>
+                           <li>
+                                    <img style={{cursor:'pointer'}} onClick={() => changeLang("arm")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Armenia.png" alt=""/>
+                                </li>
+                                <li>
+
+                                <img style={{cursor:'pointer'}} onClick={() => changeLang("ru")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt=""/>
+                                </li>
+                                <li>
+                                <img style={{cursor:'pointer'}} onClick={() => changeLang("en")} height={20} width={20} src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png" alt=""/>
+                                </li>
+                           </div>}
                         </ul>
                     </div>
 
@@ -67,9 +75,9 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 {/* <li className="search-box-outer search-toggler" onClick={handlePopup}>
                                     <i className="icon-27"></i>
                                 </li> */}
-                                <li className="nav-btn nav-toggler navSidebar-button clearfix" onClick={handleSidebar}>
+                                {/* <li className="nav-btn nav-toggler navSidebar-button clearfix" onClick={handleSidebar}>
                                     <i className="icon-28"></i>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -108,3 +116,5 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
         </>
     )
 }
+
+
